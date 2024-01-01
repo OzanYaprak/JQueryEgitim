@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4.Bolum</title>
+    <script src="/JQuery Seciciler/2.Bolum/JQuery.js"></script>
+    <script src="/JQuery Seciciler/2.Bolum/IndexScripts.js"></script>
+  </head>
+  <body>
+    <h1 id="baslikYazisi">Ozan Erhan Yaprak</h1>
+    <button id="button1"></button>
+    <button id="button2"></button>
+    <div id="loremYazisi_1">Lorem ipsum dolor sit amet.</div>
+
+    <div class="loremYazisi_2">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, eveniet
+      minima. Laboriosam provident quaerat ratione dolorum reiciendis nisi non
+      tenetur harum, excepturi sapiente fuga ab dignissimos magni, doloribus
+      modi delectus!
+    </div>
+  </body>
+  <script>
+    $("#button1").click(function () {
+      $("#loremYazisi_1").css("color", "orange");
+
+      $(".loremYazisi_2").css("color", "lightblue");
+
+      $("body").append("<hr>");
+    });
+
+    $("#button2").click(function () {
+      $(".loremYazisi_2, #loremYazisi_1").css({ "font-size": "30px" }); //Buradaki kullanim farkli { } icerisine yaziliyor
+    });
+  </script>
+</html>

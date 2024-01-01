@@ -1,0 +1,3 @@
+function gosterGizle() {
+      $('#reklam').toggle();
+}
